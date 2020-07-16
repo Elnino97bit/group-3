@@ -1,0 +1,53 @@
+.slider_bg_1{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS1xQ8E_LRaQ_f7wTstm0KUNlLAjA8d34P-tg&usqp=CAU");
+}
+.slider_bg_2{data
+    background-image: url("https://previews.123rf.com/images/seregam/seregam1201/seregam120100854/12042107-pile-of-books-and-pens-on-blue-background.jpg");
+}
+.slider_area{
+    .single_slider{
+        height: 800px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        @media #{$mobile_device} {
+            height: 300px;
+        }
+        @media #{$tablet_device} {
+            height: 400px;
+        }
+        .slider_text{
+            h3{
+             color: $heading-color;
+             font-family: $font2;
+             font-size: 75px;
+             font-weight: 400;
+             line-height: 1.16;
+             margin-bottom: 62px;
+             br{
+                @media #{$mobile_device}{
+                    display: none;
+                }
+             }
+             span{
+                 font-weight: 700;
+             }
+             @media #{$mobile_device} {
+               font-size: 33px;
+            }
+             @media #{$tablet_device} {
+               font-size: 35px;
+            }
+             @media #{$mid_device} {
+               font-size: 55px;
+            }
+            }
+            > a{
+                margin-right: 15px;
+                @media #{$mobile_device}{
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    } 
+}
